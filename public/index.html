@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+<button id="btn">Hi</button>
+<p id="template-here"></p>
+
+<script id="get-template" type="text/x-handlebars-template">
+{{#each dogs}}
+
+    <p>Name:{{name}}</p>
+    <p>Age:{{age}}</p>
+
+{{/each}}
+</script>
+
+    <script src="\jquery\dist\jquery.js"></script>
+    <script src="\handlebars\dist\handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
